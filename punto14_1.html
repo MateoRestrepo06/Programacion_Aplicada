@@ -1,0 +1,33 @@
+<DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triángulo</title>
+</head>
+<body>
+    <script>
+        let base, altura, superficie;
+        let cantidadSuperficieMayor12 = 0;
+
+        for (let i = 1; i <= 3; i++) {
+            base = parseFloat(prompt('Ingrese la base del triángulo ' + i + ':'));
+            altura = parseFloat(prompt('Ingrese la altura del triángulo ' + i + ':'));
+
+            superficie = (base * altura) / 2;
+
+            document.write('Triángulo ' + i + ':<br>');
+            document.write('Base: ' + base + '<br>');
+            document.write('Altura: ' + altura + '<br>');
+            document.write('Superficie: ' + superficie + '<br><br>');
+
+            if (superficie > 12) {
+                cantidadSuperficieMayor12++;
+            }
+        }
+
+        document.write('Cantidad de triángulos con superficie mayor a 12: ' + cantidadSuperficieMayor12);
+
+    </script>
+</body>
+</html>

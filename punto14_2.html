@@ -1,0 +1,26 @@
+<DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma</title>
+</head>
+<body>
+    <script>
+        let numeros = [];
+        let suma = 0;
+
+        for (let i = 1; i <= 10; i++) {
+            let numero = parseFloat(prompt('Ingrese el número ' + i + ':'));
+            numeros.push(numero);
+        }
+
+        for (let i = 5; i < 10; i++) {
+            suma += numeros[i];
+        }
+
+        document.write('La suma de los últimos 5 valores ingresados es: ' + suma);
+
+    </script>
+</body>
+</html>

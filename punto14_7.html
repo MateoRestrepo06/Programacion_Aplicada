@@ -1,0 +1,43 @@
+<DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valores enteros</title>
+</head>
+<body>
+    <script>
+        let negativos = 0;
+        let positivos = 0;
+        let multiplosDe15 = 0;
+        let acumuladoPares = 0;
+
+        for (let i = 1; i <= 10; i++) {
+            let valor = parseInt(prompt('Ingrese el valor ' + i + ':'));
+
+            if (valor < 0) {
+                negativos++;
+            }
+
+            if (valor > 0) {
+                positivos++;
+            }
+
+            if (valor % 15 === 0) {
+                multiplosDe15++;
+            }
+
+            if (valor % 2 === 0) {
+                acumuladoPares += valor;
+            }
+        }
+
+        document.write('Cantidad de valores negativos: ' + negativos + '<br>');
+        document.write('Cantidad de valores positivos: ' + positivos + '<br>');
+        document.write('Cantidad de múltiplos de 15: ' + multiplosDe15 + '<br>');
+        document.write('Valor acumulado de los números pares: ' + acumuladoPares + '<br>');
+
+    </script>
+
+</body>
+</html>
