@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones</title>
+</head>
+<body>
+    <script>
+        let num1 = parseInt(prompt('Ingrese el primer número:'));
+        let num2 = parseInt(prompt('Ingrese el segundo número:'));
+
+        if (num1 > num2) {
+            let suma = num1 + num2;
+            let resta = num1 - num2;
+
+            document.write('El primer número es mayor que el segundo.<br>');
+            document.write('La suma es: ' + suma + '<br>');
+            document.write('La resta es: ' + resta);
+        } 
+        else {
+            let producto = num1 * num2;
+            let division = (num2 !== 0) ? (num1 / num2) : 'La división entre cero no se puede';
+
+            document.write('El primer número no es mayor que el segundo.<br>');
+            document.write('El producto es: ' + producto + '<br>');
+            document.write('La división es: ' + division);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitos</title>
+</head>
+<body>
+    <script>
+        let numero = parseInt(prompt('Ingrese un número positivo de uno o dos dígitos (1..99):'));
+        if (numero >= 1 && numero <= 9) {
+            document.write('El número tiene uno dígito.');
+        } 
+        else if (numero >= 10 && numero <= 99) {
+            document.write('El número tiene dos dígitos.');
+        } 
+        else {
+            document.write('El número ingresado no está en el rango permitido (1..99).');
+        }
+    </script>
+</body>
+</html>
