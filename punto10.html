@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar números</title>
+</head>
+<body>
+    <script>
+        let palabra = prompt('Ingrese una palabra (casa, mesa, perro, gato):').toLowerCase();
+        let traduccion;
+
+        switch (palabra) {
+            case 'casa':
+                traduccion = 'house';
+                break;
+            case 'mesa':
+                traduccion = 'table';
+                break;
+            case 'perro':
+                traduccion = 'dog';
+                break;
+            case 'gato':
+                traduccion = 'cat';
+                break;
+            default:
+                traduccion = 'Palabra no reconocida';
+        }
+        document.write('La traducción al inglés es: ' + traduccion);
+    </script>
+</body>
+</html>
