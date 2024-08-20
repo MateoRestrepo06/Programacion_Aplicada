@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitos</title>
+</head>
+<body>
+    <script>
+        let numero1 = parseInt(prompt('Ingrese el primer número:'));
+        let numero2 = parseInt(prompt('Ingrese el segundo número:'));
+        let numero3 = parseInt(prompt('Ingrese el tercer número:'));
+
+        let mayor;
+
+        if (numero1 > numero2 && numero1 > numero3) {
+            mayor = numero1;
+        } 
+        else if (numero2 > numero1 && numero2 > numero3) {
+            mayor = numero2;
+        } 
+        else {
+            mayor = numero3;
+        }
+
+        document.write('El mayor de los tres números es: ' + mayor);
+    </script>
+</body>
+</html>

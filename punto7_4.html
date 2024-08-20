@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivel de un empleado</title>
+</head>
+<body>
+    <script>
+        let nombre = prompt('Ingrese el nombre del postulante:');
+        let totalPreguntas = parseInt(prompt('Ingrese la cantidad total de preguntas realizadas:'));
+        let preguntasCorrectas = parseInt(prompt('Ingrese la cantidad de preguntas contestadas correctamente:'));
+
+        let porcentaje = (preguntasCorrectas / totalPreguntas) * 100;
+
+        let nivel;
+
+        if (porcentaje >= 90) {
+            nivel = 'Nivel superior';
+        } else if (porcentaje >= 75) {
+            nivel = 'Nivel medio';
+        } else if (porcentaje >= 50) {
+            nivel = 'Nivel regular';
+        } else {
+            nivel = 'Fuera de nivel';
+        }
+
+        document.write('Nombre del postulante: ' + nombre + '<br>');
+        document.write('Porcentaje de respuestas correctas: ' + porcentaje.toFixed(2) + '<br>');
+        document.write('Nivel del postulante: ' + nivel);
+    </script>
+</body>
+</html>

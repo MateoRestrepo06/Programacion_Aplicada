@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprobar cuantos digitos</title>
+</head>
+<body>
+    <script>
+        let numero = parseInt(prompt('Ingrese un número entero positivo de hasta tres cifras:'));
+
+        if (numero >= 1 && numero <= 999) {
+            if (numero < 10) {
+                document.write('El número tiene 1 cifra.');
+            } 
+            else if (numero < 100) {
+                document.write('El número tiene 2 cifras.');
+            } 
+            else {
+                document.write('El número tiene 3 cifras.');
+            }
+        } 
+        else {
+            document.write('El número ingresado no está en el rango permitido.');
+        }
+    </script>
+</body>
+</html>
