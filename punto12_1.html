@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparar notas</title>
+</head>
+<body>
+    <script>
+        let mayorOigual7 = 0;
+        let menor7 = 0;
+        
+        for (let i = 1; i <= 10; i++) {
+            let nota = parseFloat(prompt('Ingrese la nota del alumno ' + i + ':'));
+
+            if (nota >= 7) {
+                mayorOigual7++;
+            } else {
+                menor7++;
+            }
+        }
+
+        document.write('Cantidad de notas mayores o iguales a 7: ' + mayorOigual7 + '<br>');
+        document.write('Cantidad de notas menores a 7: ' + menor7);
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sueldos</title>
+</head>
+<body>
+    <script>
+        let empleadosEntre100Y300 = 0;
+        let empleadosMasDe300 = 0;
+        let gastoTotal = 0;
+        const cantidadEmpleados = 5;
+
+        for (let i = 1; i <= cantidadEmpleados; i++) {
+            let sueldo = parseFloat(prompt('Ingrese el sueldo del empleado ' + i + ':'));
+
+            if (sueldo < 100 || sueldo > 500) {
+                document.write('El sueldo ingresado está fuera del rango permitido.);
+                i--;
+                continue;
+            }
+
+            gastoTotal += sueldo;
+
+            if (sueldo >= 100 && sueldo <= 300) {
+                empleadosEntre100Y300++;
+            } else if (sueldo > 300) {
+                empleadosMasDe300++;
+            }
+        }
+
+        document.write('Cantidad de empleados que cobran entre $100 y $300: ' + empleadosEntre100Y300 + '<br>');
+        document.write('Cantidad de empleados que cobran más de $300: ' + empleadosMasDe300 + '<br>');
+        document.write('Importe total que gasta la empresa en sueldos: $' + gastoTotal.toFixed(2));
+    </script>
+</body>
+</html>

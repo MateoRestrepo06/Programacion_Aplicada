@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <script>
+        let sumaLista1 = 0;
+        let sumaLista2 = 0;
+        const cantidadValores = 3;
+        
+        for (let i = 1; i <= cantidadValores; i++) {
+            let valor = parseFloat(prompt('Ingrese el valor ' + i + ' para la Lista 1:'));
+            sumaLista1 += valor;
+        }
+
+        for (let i = 1; i <= cantidadValores; i++) {
+            let valor = parseFloat(prompt('Ingrese el valor ' + i + ' para la Lista 2:'));
+            sumaLista2 += valor;
+        }
+
+        if (sumaLista1 > sumaLista2) {
+            document.write('Lista 1 mayor');
+        } else if (sumaLista1 < sumaLista2) {
+            document.write('Lista 2 mayor');
+        } else {
+            document.write('Listas iguales');
+        }
+    </script>
+</body>
+</html>

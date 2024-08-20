@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altura promedio</title>
+</head>
+<body>
+    <script>
+        let sumaAlturas = 0;
+        let cantidadAlturas = 5;
+
+        for (let i = 1; i <= cantidadAlturas; i++) {
+            let altura = parseFloat(prompt('Ingrese la altura de la persona ' + i + ' (en metros):'));
+            sumaAlturas += altura;
+        }
+
+        let promedioAltura = sumaAlturas / cantidadAlturas;
+
+        document.write('La altura promedio de las personas es: ' + promedioAltura.toFixed(2) + ' metros');
+    </script>
+
+</body>
+</html>

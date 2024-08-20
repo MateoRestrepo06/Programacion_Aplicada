@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pares e impares</title>
+</head>
+<body>
+    <script>
+        let cantidadPares = 0;
+        let cantidadImpares = 0;
+        const cantidadNumeros = 5;
+
+        for (let i = 1; i <= cantidadNumeros; i++) {
+            let valor = parseInt(prompt('Ingrese el número entero ' + i + ':'));
+
+            if (valor % 2 === 0) {
+                cantidadPares++;
+            } else {
+                cantidadImpares++;
+            }
+        }
+        document.write('Cantidad de números pares: ' + cantidadPares + '<br>');
+        document.write('Cantidad de números impares: ' + cantidadImpares);
+    </script>
+</body>
+</html>
