@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valores iguales</title>
+</head>
+<body>
+    <script>
+        let valor1 = parseInt(prompt('Ingrese el primer valor:'));
+        let valor2 = parseInt(prompt('Ingrese el segundo valor:'));
+        let valor3 = parseInt(prompt('Ingrese el tercer valor:'));
+
+        if (valor1 == valor2 && valor1 == valor3) {
+            let suma = valor1 + valor2;
+            let resultado = suma * valor3;
+
+            document.write('Todos los valores son iguales.<br>');
+            document.write('El resultado de la operación es: ' + resultado);
+        } 
+        else {
+            document.write('Los valores ingresados no son iguales.');
+        }
+    </script>
+</body>
+</html>
