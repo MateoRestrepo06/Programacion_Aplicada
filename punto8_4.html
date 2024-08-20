@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar coordenada</title>
+</head>
+<body>
+    <script>
+        let x = parseInt(prompt('Ingrese la coordenada x:'));
+        let y = parseInt(prompt('Ingrese la coordenada y:'));
+
+        if (x > 0 && y > 0) {
+            document.write('El punto se encuentra en el 1º Cuadrante.');
+        } 
+        else if (x < 0 && y > 0) {
+            document.write('El punto se encuentra en el 2º Cuadrante.');
+        } 
+        else if (x < 0 && y < 0) {
+            document.write('El punto se encuentra en el 3º Cuadrante.');
+        } 
+        else if (x > 0 && y < 0) {
+            document.write('El punto se encuentra en el 4º Cuadrante.');
+        } 
+        else if (x === 0 && y !== 0) {
+            document.write('El punto está sobre el eje y.');
+        } 
+        else if (x !== 0 && y === 0) {
+            document.write('El punto está sobre el eje x.');
+        } 
+        else {
+            document.write('El punto está en el origen.');
+        }
+    </script>
+</body>
+</html>
